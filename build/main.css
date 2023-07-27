@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #dff9fb;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #182C61;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  padding: 12px;
+  font-weight: bold;
+  margin-left: 36px;
+}
+.menu li a {
+  color: #dff9fb;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: #182C61;
+  text-decoration: underline;
+}
+.menu li:hover {
+  font-style: italic;
+  background-color: #44bd32;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 70px;
+  padding: 56px 0;
+}
+section h2 {
+  font-family: Roboto, sans-serif;
+  color: #182C61;
+  font-size: 36px;
+  font-style: italic;
+  border-bottom: 2px solid #182C61;
+}
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+.products .product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+.products .product-button {
+  display: block;
+  background-color: #44bd32;
+  color: #dff9fb;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 18px;
+}
+.products .product-button:hover {
+  background-color: #359527;
+}
+
+footer {
+  font-family: Roboto, sans-serif;
+  margin-top: 24px;
+  padding: 16px 0;
+  background-color: #182C61;
+  color: #dff9fb;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 98%;
+  }
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
